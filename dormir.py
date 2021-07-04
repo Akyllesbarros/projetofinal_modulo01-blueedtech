@@ -1,16 +1,17 @@
-class Dormir:
-    from .relogio import Relogio
-    def __init__(self,energia,paranoia,fome,horas=8,tempo):
-        self.energia=energia+(10*horas)
-        self.paranoia=paranoia-(5*horas)
-        self.fome=fome-(3*horas)
-        avancaTempo(horas)
+from .relogio import Relogio
 
-    def embreagar(self,energia,paranoia,fome,horas=0.5,tempo):
-        self.energia= -20
-        self.paranoia-= -40
-        self.tempo=tempo+horas
+    def dormir():
+        self.__energia+=80
+        self.__paranoia+=40
+        self.__fome-=20
+        avancaTempo(8)
+
+    def embreagar():
+        self.__energia-=20
+        self.__paranoia-= 40
+        avancaTempo()
     
-    def cozinhar(self,fome,tempo,minutos=15,tempo)
-        avancaTempo(horas)
+    def cozinhar()
+        avancaTempo(0,15)
         #15 min
+    

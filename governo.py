@@ -1,7 +1,9 @@
 class Governo:
-    def __init__(self,desconfianca=0):
-        if desconfianca ==100:
-            return f'''Você foi pego pelo governo e preso !
+    def __init__(self):
+        self.__desconfianca= 0
+        
+    def pego(self):
+        print(f'''Você foi pego pelo governo e preso !
  
         ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼
         ███▀▀▀██┼███▀▀▀███┼███▀█▄█▀███┼██▀▀▀
@@ -27,4 +29,7 @@ class Governo:
         ┼┼┼┼┼┼┼┼▄▄▄██┼┼█▀█▀█┼┼██▄▄▄┼┼┼┼┼┼┼┼┼
         ┼┼┼┼┼┼┼┼▀▀██┼┼┼┼┼┼┼┼┼┼┼██▀▀┼┼┼┼┼┼┼┼┼
         ┼┼┼┼┼┼┼┼┼┼▀▀┼┼┼┼┼┼┼┼┼┼┼▀▀┼┼┼┼┼┼┼┼┼┼┼
-        ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼ '''
+        ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼ ''')
+
+governo=Governo()
+governo.pego()
