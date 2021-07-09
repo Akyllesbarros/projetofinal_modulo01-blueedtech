@@ -11,7 +11,7 @@ from .relogio import Relogio
         self.__paranoia-= 40
         avancaTempo()
     
-    def cozinhar()
+    def cozinhar() :
         avancaTempo(0,15)
         #15 min
     

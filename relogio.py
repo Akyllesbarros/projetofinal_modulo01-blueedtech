@@ -1,3 +1,4 @@
+
 class Relogio:
     def __init__(self):
         self.__horas = 6
@@ -15,6 +16,4 @@ class Relogio:
         while(self.__horas)>24:
             self.__horas-=24
             self.__dia+=1
-        print(self.__dia,self.__horas,self.__minutos)
-
-    
+        
